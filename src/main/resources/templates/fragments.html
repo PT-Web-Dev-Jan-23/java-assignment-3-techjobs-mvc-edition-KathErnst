@@ -30,10 +30,10 @@
     <div th:fragment="job-table">
         <table th:each="job : ${jobs}" class="job-listing">
             <thead>
-            <tr>
-                <th th:text="${job.name}"></th>
-            </tr>
             </thead>
+            <tr>
+                <td th:text="'Name: ' + ${job.name}"></td>
+            </tr>
             <tr>
                 <td th:text="'ID: ' + ${job.id}"></td>
             </tr>
