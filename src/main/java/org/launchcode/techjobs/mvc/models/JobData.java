@@ -230,5 +230,18 @@ public class JobData {
         return allCoreCompetency;
     }
 
+    public static ArrayList<Job> getAllJobs() {
+        return allJobs;
+    }
+
+    public static ArrayList<String> getAllJobNames() {
+        findAll();
+        ArrayList<String> allJobNames = new ArrayList<>();
+        for (Job job : allJobs) {
+            String theName = job.getName();
+            allJobNames.add(theName);
+        }
+        return allJobNames;
+    }
 }
 
